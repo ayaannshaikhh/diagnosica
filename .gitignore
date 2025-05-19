@@ -176,3 +176,5 @@ cython_debug/
 backend/__pycache__
 .venv
 __pycache__
+
+backend/model/brain_tumor_model.h5
