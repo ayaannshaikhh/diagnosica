@@ -8,7 +8,7 @@ from tensorflow.keras.models import load_model
 app = Flask(__name__)
 CORS(app)
 
-model = load_model('model/brain_tumor_model.h5')
+model = load_model('backend/model/brain_tumor_model.h5')
 
 def preprocess_image(image_bytes):
     image = Image.open(io.BytesIO(image_bytes)).convert("RGB").resize((224, 224))
